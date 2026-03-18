@@ -1,18 +1,60 @@
 <!DOCTYPE html>
 
-<html lang="de"></html>
+<html lang="de">
 <head>
     <title>organ verifizieren</title>
-    
-
+    <link rel="stylesheet" href="organ_seite.css">
+    <link rel="stylesheet" href="container.css">
 </head>
+
+
 <body>
-    <h1 style="text-align: center;">Organ verifizieren</h1>
-<p>
-    <img src="bild/organ_seite.png" alt="main">
-</p>
+        <h1 style="text-align: center;">Organ verifizieren</h1>
+    
+    <img
+            src="bild/organ_seite.png"
+          width="20%"
+         >
+    <h2>
+<div class="container">
+    <h2>Form</h2>
+
+    <h3>  <!--Bestätigungsseite-->
+        <label>Name: </label>
+            <input
+            type="text"
+            id="name"
+            name="name"
+     required
+     />
+    </h3>
 
 
+   <h4><label>Email: </label>
+    <input
+        type="text"
+        id="Email"
+        Email="Email"
+    required
+    />
+  </h4>
+
+
+<div class="Betrag">
+    <h3>
+    <label> Spendenbetrag</label>
+    <select name="Betrag">
+        <option value="5"> 50 CHF</option>
+        <option value="10"> 75 CHF</option>
+        <option value="20"> 100 CHF</option>
+        <option value="50"> 125CHF</option>
+   </h3>
+    </select>
+
+
+
+
+    </h2>
 </body>
 </html>
 
