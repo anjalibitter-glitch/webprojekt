@@ -1,76 +1,167 @@
 <!DOCTYPE html>
-<html>
-<body>
-<!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<style>
-  body {
-    margin: 0;              /* Standardabstände entfernen */
-    padding-top: 50px;      /* Abstand vom oberen Rand, anpassen nach Bedarf */
-    text-align: center;     /* horizontal zentrieren */
-    background-color: #fff; /* optional */
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeDonation  Vision</title>
 
-  h1 {
-    font-size: 5rem; /* Größe des Titels */
-   margin: 0;       /* unnötige Abstände entfernen */
-  }
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="welle.css">
+    <style>
+        body {
+            background-color: #f4f7f5;
+            font-family: "Open Sans", sans-serif;
+            padding: 0 64px;
+            margin: 0;
+        }
 
-  .green {
-    color: rgb(30, 115, 13);
-  }
+        h1 {
+            margin-top: 140px;
+            color: #2e7d32;
+        }
 
-  .brown {
-    color: rgb(128, 48, 34);
-  }
-</style>
+        h2 {
+            color: #2e7d32;
+            margin-top: 0;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .nav {
+            position-fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+
+            background-color: white;
+            padding: 15px 0;
+
+            text-align: center;
+
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #2e7d32;
+            font-weight: bold;
+           
+        }
+        .nav {
+             position: fixed;
+             top: 0;
+             left: 0;
+             width: 100%;
+             z-index: 9999; 
+}
+
+        .nav a:hover {
+            text-decoration: underline;
+            color: #333;
+        }
+
+        
+        .container {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(32, 16, 71, 0.1);
+            border-left: 6px solid #2e7d32;
+            transition: transform 0.2s;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+        }
+        .header-title {
+            text-align: center;
+            margin-top: 40px;
+        }
+        body {
+    padding-top: 80px; 
+}
+    </style>
 </head>
+
 <body>
-  <h1>
-    <span class="green">Life</span>
-    <span class="brown">Donation</span>
-  </h1>
+    <img class="welle" src="wave_(2).svg" alt="icone" style="position:absolute;
+    top:0px;
+    left:0px;
+    ">
+  <div class="header-title">
+    <h1>LifeDonation</h1>
+    <p>Gemeinsam Leben retten durch Ihre Organspende</p>
+</div>
+
+
+<div class="nav">
+    <a href="index.html">Home</a>
+    <a href="Kontakt.seite (1).html">Kontakt</a>
+    <a href="termin_vereinbaren.html">Termin vereinbaren</a>
+    <a href="s.seite.html">Spende</a>
+    <a href="Impressum.html">Impressum</a>
+</div>
+
+<h1>Unsere Vision</h1>
+
+<div class="container">
+
+    <div class="box">
+        <h2>Wofür wir stehen</h2>
+        <p>
+            LifeDonation steht für Menschlichkeit, Verantwortung und Hoffnung. 
+            Unser Ziel ist es, Menschen über die Bedeutung der Organspende aufzuklären 
+            und Vertrauen in diesem wichtigen Prozess zu schaffen.
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>Warum Organspende?</h2>
+        <p>
+            Viele Menschen warten dringend auf ein lebensrettendes Organ. 
+            Eine einzige Entscheidung kann  Leben retten und neue Hoffnung schenken.
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>Was Du bewirken kannst</h2>
+        <p>
+            Mit Deiner Entscheidung zur Organspende kannst Du Leben verlängern oder sogar retten. 
+            Du gibst anderen Menschen eine zweite Chance – ein unbezahlbares Geschenk.
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>Unsere Mission</h2>
+        <p>
+            Wir möchten Menschen dazu ermutigen, 
+            sich bewusst mit dem Thema Organspende auseinanderzusetzen.
+        </p>
+    </div>
+
+</div>
+
 </body>
 </html>
-
-
-
-    <ul>
-        <li><a href="Spende.html">Spende</a></li>       
-        <li><a href="Kontakt.html">Kontakt</a></li>
-        <li><a href="Organ virifizieren.html">Organ verifizieren</a></li>
-        <li><a href="Termin vereinbaren.html">Termin vereinbaren</a></li>
-    </ul>
-</nav>
-
-<section>
-    <article>
-        <h2>Unsere Mission</h2>
-        <p>Wir helfen Menschen durch  Organspenden Leben zu retten.</p>
-    </article>
-
-    <article>
-        <h2>Warum Spenden wichtig ist</h2>
-        <p>Jede Spende rettet Leben und schenkt Hoffnung.</p>
-    </article>
-</section>
-
-<aside>
-    <h3>Wer sind wir.</h3>
-    <p>Wir sind eine Organisation im Bereich Organspende und setzen uns dafür ein, Menschen eine zweite Chance auf Leben zu ermöglichen. Unser Ziel ist es, Hoffnung zu schenken und Leben zu retten.
-
-Durch finanzielle Unterstützung sowie die Förderung von Organspenden helfen wir dabei, lebenswichtige medizinische Behandlungen möglich zu machen. Jede einzelne Spende – ob finanziell oder durch eine Organspende – kann den entscheidenden Unterschied machen.
-
-Denn jede Hilfe zählt!</p>
-</aside>
-
-<details>
-    <summary>So kannst du spenden</summary>
-    <p>Hier findest du Informationen, wie Du ein Teil der Organspende werden kannst.</p>
-</details>
-
-<footer>
-    <p>© 2026 Life Donation | Impressum</p>
-</footer>
