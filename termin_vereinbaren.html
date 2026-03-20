@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rdv.css">
+    <link rel="stylesheet" href="agenda.css">
+    <link rel="stylesheet" href="f1.css">
+    <link rel="stylesheet" href="welle.css">
+    
+
+<title> Termin vereinbaren</title>
+    
+    <style >
+        
+        body {
+            background-color: #f4f7f5;
+            font-family: "Open Sans", sans-serif;
+            padding: 0 64px;
+            margin: 0;
+        }
+
+        h1 {
+            margin-top: 140px;
+            color: #2e7d32;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        a {
+            color: #2e7d32;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            position: absolute;
+            right: 64px;
+            top: 16px;
+        }
+
+        .social-icon {
+            height: 30px;
+        }
+
+       
+        form {
+            width: 400px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        input, select {
+            width: 100%;
+            margin-bottom: 12px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background-color: #256628;
+            cursor: pointer;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <img class="welle" src="wave_(2).svg" alt="icone">
+    <h1 style="text-align: center;">Termin vereinbaren</h1>
+    <img
+        src="bild/rdv.png" >
+    <div class="f1">
+        <form>
+
+            <label>Name:</label>
+            <input type="text" name="vorname" required>
+
+            <label>Nachname:</label>
+            <input type="text" name="nachname" required>
+
+            <label>Kanton:</label>
+            <input type="text" name="kanton" required>
+
+            <label>Land:</label>
+            <input type="text" value="Schweiz" readonly>
+
+            <label>Telefon:</label>
+            <input type="tel" placeholder="+41 12 456 78 90" required>
+
+            <label>E-Mail:</label>
+            <input type="email" required>
+
+
+            <button type="submit">Absenden</button>
+
+
+        </form>
+    </div>
+    <div class="agenda">
+        <iframe src="https://calendar.google.com/calendar/embed?src=lifedonation.savelife%40gmail.com&ctz=Europe%2FParis" style="border: 0" width="400" height="375" frameborder="0" scrolling="no"></iframe>
+    </div> 
+
+</body>
